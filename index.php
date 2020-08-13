@@ -6,7 +6,7 @@ $base64 = "SUkqANatAAAAgLJZAQCAslkBAICyWQEAgLJZAQCAslkBAICyWQEAgLJZAQCAslkBAICyW
 
 $imageBlob = base64_decode($base64);
 $image64 = base64_encode($imageBlob);
-//$imagick = new Imagick();
+$imagick = new Imagick();
 
 $arr["base64"] = $image64;
 print json_encode($arr, JSON_PRETTY_PRINT);
