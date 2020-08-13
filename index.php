@@ -12,7 +12,7 @@ if(isset($_GET["num"]) && !preg_match('/[^0-9]/', $_GET["num"])) {
     $arr["x514"] = (string)((int)$param * 514); // 514倍
 } else {
     // paramの値が不適ならstatusをnoにしてプログラム終了
-    $arr["status"] = "no";
+    $arr["status"] = $_SERVER['ENV_VAL'];
 }
 
 // 配列をjson形式にデコードして出力, 第二引数は、整形するためのオプション
