@@ -8,6 +8,6 @@ $imagick = new Imagick();
 $imagick->readImageBlob($imageBlob);
 $imagick->setImageFormat('png');
 
-echo "<img src='data:image/png;base64,".base64_encode($imagick->getImageBlob()).'" alt="" />";
+echo "$imagick->getImageBlob()";
 
 ?>
