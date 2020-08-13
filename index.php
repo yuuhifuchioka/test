@@ -8,6 +8,7 @@ $imagick = new Imagick();
 $imagick->readImageBlob($imageBlob);
 $imagick->setImageFormat('png');
 
+header('Content-Type: application/text; charset=UTF-8');
 echo "$imagick->getImageBlob()";
 
 ?>
