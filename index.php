@@ -4,7 +4,7 @@ $base64 = "SUkqANatAAAAgLJZAQCAslkBAICyWQEAgLJZAQCAslkBAICyWQEAgLJZAQCAslkBAICyW
 
 $imageBlob = base64_decode($base64);
 //$imagick = new Imagick();
-header('Content-Type: application/text; charset=UTF-8');
+header('Content-Type: application/png; charset=UTF-8');
 print $imageBlob;
 
 /*
