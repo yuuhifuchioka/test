@@ -4,11 +4,15 @@ $base64 = "SUkqANatAAAAgLJZAQCAslkBAICyWQEAgLJZAQCAslkBAICyWQEAgLJZAQCAslkBAICyW
 
 $imageBlob = base64_decode($base64);
 
+header('Content-Type: application/text; charset=UTF-8');
+print $imageBlob;
+
+/*
 $imagick = new Imagick();
 $imagick->readImageBlob($imageBlob);
 $imagick->setImageFormat('png');
 
 header('Content-Type: application/text; charset=UTF-8');
 echo "$imagick->getImageBlob()";
-
+*/
 ?>
